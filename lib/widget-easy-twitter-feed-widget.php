@@ -24,7 +24,7 @@ class Kamn_Widget_Easytwitterfeedwidget extends WP_Widget {
 		);
 
 		/* Create the widget. */
-		$this->WP_Widget( 'widget-easy-twitter-feed-widget-kamn', __( 'Easy Twitter Feed Widget', 'kamn-easy-twitter-feed-widget'), $widget_options, $control_options );
+		parent::__construct( 'widget-easy-twitter-feed-widget-kamn', __( 'Easy Twitter Feed Widget', 'kamn-easy-twitter-feed-widget'), $widget_options, $control_options );
 
 	}
 
